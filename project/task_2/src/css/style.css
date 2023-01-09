@@ -1,0 +1,95 @@
+.container {
+    max-width: 1000px;
+    margin: 10px auto 50px;
+    border-radius: 10px;
+}
+
+.header-logo{
+    width: 150px;
+}
+
+.logo-mono{
+    width: 100%;
+}
+
+.header-line, nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+a, input, .title, button, .final-value, .error-message, .timecode, .d-input, .d-input-b{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #323232;
+}
+
+.d-input {
+    color: #ddff7c;
+}
+
+a:hover{
+    color: #eb404e;
+    transition: all 0.2s ease;
+    
+}
+
+.short-menu-list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.calc-wrapper {
+    display: flex;  
+    justify-content: space-between;
+
+}
+
+.input-content {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button, .final-value-RUB, .final-value-USD {
+    width: 240px;
+    background-color: #c5afff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 20px;
+    border-radius: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input:hover {
+    background-color: white;
+    border-color: #c5afff;
+    box-shadow: 0 0 5px 0 #c5afff;
+    border: 2px solid black;
+}
+
+label {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    width: 100px;
+    background-color: #004a43;
+    color: white;
+    height: 80px;
+    margin-top: 48px;
+    border-radius: 50px;
+
+}
+
+button:hover {
+    transform: scale(1.15);
+    background-color: #eb404e;
+}
+
+.wrapper-for-calc-content{
+    display: flex;
+    gap: 90px;
+}

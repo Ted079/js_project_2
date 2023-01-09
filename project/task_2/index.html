@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file-17</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                   <a href="../js_project/index.html"><img class="logo-mono" src="./public/logo.png" alt="logo-png"></a>
+                </div>
+                <nav>
+                    <ul class="short-menu-list">
+                        <li>
+                            <a href="#">CARDS</a>
+                        </li>
+                    </ul>
+                    <ul class="short-menu-list">
+                        <li>
+                            <a href="#">DEPOSIT</a>
+                        </li>
+                    </ul>
+                    <ul class="short-menu-list">
+                        <li>
+                            <a href="#">CONVERT</a>
+                        </li>
+                    </ul>
+                    <ul class="short-menu-list">
+                        <li>
+                            <a href="#">INTERNATIONAL TRANSFERS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="calc-wrapper">
+                <div class="input-content">
+                    <label for="">Ведите сумму в долларах</label>
+                    <input type="number" value="0" id = "usd">
+                    <label for="">Ведите сумму в рублях</label>
+                    <input type="number" value="0" id = "rub">
+                </div>
+        
+                <button class="btn">Рассчитать</button>
+        
+                <div class="calc-table"> 
+                    <p class="final-value-RUB">0₽</p>
+    
+                    <p class="final-value-USD">0$</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>

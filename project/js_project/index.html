@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Mono</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                   <a href="#"><img class="logo-mono" src="./public/logo.png" alt="logo-png"></a>
+                </div>
+                <nav>
+                    <ul class="short-menu-list">
+                        <li>
+                            <a href="#">CARDS</a>
+                        </li>
+                    </ul>
+                    <ul class="short-menu-list">
+                        <li>
+                            <a href="#">DEPOSIT</a>
+                        </li>
+                    </ul>
+                    <ul class="short-menu-list">
+                        <li>
+                            <a href="../task_2/index.html">CONVERT</a>
+                        </li>
+                    </ul>
+                    <ul class="short-menu-list">
+                        <li>
+                            <a href="#">INTERNATIONAL TRANSFERS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="wrapper-for-calc-content">
+                <div class="calculate-content">
+                    <div class="input-wrapper">
+                        <p class="title">Начальная сумма вклада</p>
+                        <div class="d-input">
+                            $ <input type="number" id="intialDeposit" value="0">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <p class="title">Сумма ежемесячного пополнения</p>
+                        <div class="d-input">
+                            $ <input type="number" id="monthlyReplenishment" value="0"> 
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <p class="title">Процентная ставка</p>
+                        <div class="d-input">
+                            % <input type="number" id="interestRate" value="0">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <p class="title">Срок вклада</p>
+                        <div class="d-input-b">
+                            Дней  <input type="number" id="depositTerm" value="0"> 
+                        </div>
+                    </div>  
+                </div>
+                
+                <button class="btn-calculte">Рассчитать</button>
+                <div class="calculate-value">
+                    <div class="calc-table">
+                        <div class="final-result-calculate">
+                            <div class="title">Сумма на конец периода</div>
+                            <p class="final-value" id="amountAtTheEndOfThePeriod">0<p>
+                        </div>
+                        <div class="final-result-calculate">
+                            <div class="title"> Сумма пополнения</div>
+                            <p class="final-value" id="topUpAmount">0<p>
+                        </div>
+                        <div class="final-result-calculate">
+                            <div class="title"> Начисленные проценты %</div>
+                            <p class="final-value" id="interestCharges">0<p>
+                        </div>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="logo-table">
+                        <div class="img-cat-table">
+                            <img class="img-cat" src="./public/logo-cat/tild3262-3463-4266-b461-383132313137__frame.svg">
+                        </div>
+                    </div> 
+                </div>
+            </div>   
+        </div>
+    </main>
+    <footer>
+        <div class="timecode">Azerbaijan, Baku, 2023</div>
+    </footer>
+
+    <script  src="./src/js/script.js"></script>
+        
+
+</body>
+</html>
