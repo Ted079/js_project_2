@@ -44,6 +44,7 @@ a:hover{
 .calc-wrapper {
     display: flex;  
     justify-content: space-between;
+    margin-top: 99px;
 
 }
 
@@ -98,4 +99,18 @@ button:hover {
 .wrapper-for-calc-content{
     display: flex;
     gap: 90px;
+}
+
+.img2 {
+    width: 160px;
+} 
+
+img {
+    width: 100%;
+}
+
+.timecode {
+    margin-top: 199px;
+    text-align: center;
+    margin-bottom: 20px;
 }

@@ -4,7 +4,7 @@ const monthlyReplenishment = document.querySelector('#monthlyReplenishment');
 const interestRate = document.querySelector('#interestRate');
 const depositTerm = document.querySelector('#depositTerm');
 
-//итогое значения(результат)
+//итогое значения
 const amountAtTheEndOfThePeriod = document.querySelector('#amountAtTheEndOfThePeriod'); 
 const topUpAmount = document.querySelector('#topUpAmount'); 
 const interestCharges = document.querySelector('#interestCharges');
@@ -22,7 +22,7 @@ function calculate(finalInterestedChanges, finalTopUpAmount, finalPrice){
         interestRate -- годовая процентная ставка, разделенная на 100
         K-кол-во месяцев в году  == 12
         depositTerm -- срок вложения в днях(30)
-        finalPrice -- сумма на конец периода
+        finalPrice -- сумма на конец периода 
     */
     
     finalTopUpAmount = depositTerm.value * monthlyReplenishment.value;
@@ -42,20 +42,21 @@ function calculate(finalInterestedChanges, finalTopUpAmount, finalPrice){
 
 
 function checkValue(finalPriceArounded, finalTopUpAmount,finalInterestedChangesArounded){
-    if(intialDeposit.value < 0 || monthlyReplenishment.value < 0 || depositTerm.value < 0){
-
+    if(intialDeposit.value < 0 || monthlyReplenishment.value < 0 || depositTerm.value < 0 || interestRate.value < 0 ){
         errorMessage.innerHTML = 'Вводимое чилсо должно быть больше 0'
         return false;
     
     }else if(interestRate.value > 100 || depositTerm.value > 30 ){
 
         errorMessage.innerHTML = 'Введите корректные данные';
-        return false
+        return false;
     
     }else{
         
         amountAtTheEndOfThePeriod.innerHTML = `${finalPriceArounded} $`;
         topUpAmount.innerHTML = `${finalTopUpAmount} $`;
         interestCharges.innerHTML = `${finalInterestedChangesArounded}`;
+
+        return true;
     }
 }

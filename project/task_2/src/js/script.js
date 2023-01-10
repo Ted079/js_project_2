@@ -1,11 +1,11 @@
 let USD = {
 	name: 'USD',
-	course : 0.014
+	course : 0.59
 };
 
 let RUB = {
 	name: 'RUB',
-	course: 69.92
+	course: 41.07
 };
 
 const inputAmount = document.querySelector('#input-amount');
@@ -14,8 +14,8 @@ const inputAmount = document.querySelector('#input-amount');
 const totalUsdAmount = document.querySelector('.final-value-USD');
 const totalRubAmount = document.querySelector('.final-value-RUB');
 
-const btn = document.querySelector('.btn');
-btn.addEventListener('click', calculate);
+// const btn = document.querySelector('.btn');
+inputAmount.addEventListener('blur', calculate);
 
 function calculate(finalUsdAmount, finalRubAmount){
 	finalUsdAmount = inputAmount.value * USD.course;
