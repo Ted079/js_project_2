@@ -111,12 +111,19 @@ button{
 
 .error-message {
     background-color: #c5afff;
-    width: 320px ;
-    /* display: none; */
-    border: 2px solid #c5afff;
+    display: none;
     box-shadow: 0 0 10px 0 #c5afff;
     color:#ed1628;
     font-size: 16px;
+    height: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
 }
 
 

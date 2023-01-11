@@ -42,21 +42,18 @@ function calculate(finalInterestedChanges, finalTopUpAmount, finalPrice){
 
 
 function checkValue(finalPriceArounded, finalTopUpAmount,finalInterestedChangesArounded){
-    if(intialDeposit.value < 0 || monthlyReplenishment.value < 0 || depositTerm.value < 0 || interestRate.value < 0 ){
-        errorMessage.innerHTML = 'Вводимое чилсо должно быть больше 0'
+    if(intialDeposit.value < 0 || monthlyReplenishment.value < 0 || depositTerm.value < 0 || interestRate.value < 0 ||interestRate.value > 100 || depositTerm.value > 30 ){
+        errorMessage.classList.remove('hidden');
+        errorMessage.classList.add('shown');
         return false;
-    
-    }else if(interestRate.value > 100 || depositTerm.value > 30 ){
 
-        errorMessage.innerHTML = 'Введите корректные данные';
-        return false;
-    
     }else{
         
         amountAtTheEndOfThePeriod.innerHTML = `${finalPriceArounded} $`;
         topUpAmount.innerHTML = `${finalTopUpAmount} $`;
         interestCharges.innerHTML = `${finalInterestedChangesArounded}`;
-
+        errorMessage.classList.remove('shown');
+        errorMessage.classList.add('hidden');
         return true;
     }
 }
