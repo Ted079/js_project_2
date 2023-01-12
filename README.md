@@ -1,5 +1,4 @@
 # js_project_2
-js_proj
 Website about bank deposit settlements with capitalization and replenishment, as well as a page-calculator with its use. There is also a tab for converting currencies into rubles and dollars.
 To create this site, I used technologies such as html, сss and javascript.
 The main functionality of the site is the calculation of a deposit with capitalization, where it returns a detailed response containing: the amount of the deposit at the end of the term, the amount of replenishment, accrued interest, error message.
