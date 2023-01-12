@@ -8,7 +8,7 @@ const depositTerm = document.querySelector('#depositTerm');
 const amountAtTheEndOfThePeriod = document.querySelector('#amountAtTheEndOfThePeriod'); 
 const topUpAmount = document.querySelector('#topUpAmount'); 
 const interestCharges = document.querySelector('#interestCharges');
-const errorMessage = document.querySelector('.error-message')
+const errorMessage = document.querySelector('.error-message');
 
 //кнопка рассчета
 const btnCalculte = document.querySelector('.btn-calculte');
@@ -51,7 +51,7 @@ function checkValue(finalPriceArounded, finalTopUpAmount,finalInterestedChangesA
         
         amountAtTheEndOfThePeriod.innerHTML = `${finalPriceArounded} $`;
         topUpAmount.innerHTML = `${finalTopUpAmount} $`;
-        interestCharges.innerHTML = `${finalInterestedChangesArounded}`;
+        interestCharges.innerHTML = `${finalInterestedChangesArounded} %`;
         errorMessage.classList.remove('shown');
         errorMessage.classList.add('hidden');
         return true;
